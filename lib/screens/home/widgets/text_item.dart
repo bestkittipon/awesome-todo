@@ -12,11 +12,12 @@ class TextItem extends StatelessWidget {
     if(item.isCheck){
       return Text(
         item.text,
-        style: TextStyle(decoration: TextDecoration.lineThrough),
+        style: TextStyle(fontSize: 30.0 , decoration: TextDecoration.lineThrough),
       );
     }else {
       return Text(
         item.text,
+        style: TextStyle(fontSize: 30.0),
       );
     }
   }

@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class AddPage extends StatefulWidget {
@@ -10,6 +11,17 @@ class AddPage extends StatefulWidget {
 
 class _AddPageState extends State<AddPage> {
   _AddPageState();
+  Firestore db = Firestore.instance;
+
+  _addTodoItem(String text) async {
+    if(text != null && text.length > 0) {
+      var data = new Map<String , dynamic>();
+      data['title'] = text;
+      data['isDone'] = false;
+      db.collection('Todo').add(data);
+    }
+    Navigator.pop(context, myController.text)
+  }
 
   final myController = TextEditingController();
 
@@ -22,7 +34,7 @@ class _AddPageState extends State<AddPage> {
           leading: IconButton(
               icon: Icon(Icons.arrow_back),
               tooltip: 'back',
-              onPressed: () => Navigator.pop(context, myController.text),
+              onPressed: () => _addTodoItem(myController.text),
             )
         ),
       body: Container(
