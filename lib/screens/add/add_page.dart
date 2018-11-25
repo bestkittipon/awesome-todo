@@ -20,7 +20,7 @@ class _AddPageState extends State<AddPage> {
       data['isDone'] = false;
       db.collection('Todo').add(data);
     }
-    Navigator.pop(context, myController.text)
+    Navigator.pop(context, myController.text);
   }
 
   final myController = TextEditingController();
