@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "84008931644",
+    "firebase_url": "https://awesome-todo-f33f2.firebaseio.com",
+    "project_id": "awesome-todo-f33f2",
+    "storage_bucket": "awesome-todo-f33f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84008931644:android:d6bc47fb35fad6be",
+        "android_client_info": {
+          "package_name": "com.example.homeworkflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84008931644-40om3v18jh585sfkj6ga4q7t9h871j7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXKZe9_vLIyW0TSq1omNOqcxjDOS6rAoM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
