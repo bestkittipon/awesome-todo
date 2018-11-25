@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_work_flutter/screens/add/add_page.dart';
+import 'package:home_work_flutter/screens/home/widgets/text_item.dart';
 import 'package:home_work_flutter/screens/models/item.dart';
 
 class HomePage extends StatefulWidget {
@@ -39,10 +40,7 @@ class _HomePageState extends State<HomePage> {
               child: Row(
                 children: <Widget>[
                   Expanded(
-                    child: Text(
-                        items[position].text,
-                        style: TextStyle(decoration: TextDecoration.lineThrough),
-                    ),
+                    child: TextItem(items[position])
                   ),
                   Expanded(
                     child: Checkbox(value: items[position].isCheck, onChanged: (bool value) {
